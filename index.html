@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CleanCodesUK">
+    <meta name="developer" content="Aaron Judge">
+    <meta name="year" content="2021">
+    <meta name="description" content="Professional, Clean, and Designer Website Development based in the UK.">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon/">
+    <script src="./app.js"></script>
+    <title>CleanCodesUK - Portfolio Home</title>
+</head>
+<style>
+    /* 
+    Using the Universal Asterisk Selector To Make a 'reset' on the page elements.
+*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;  
+}
+
+/*
+    Header section CSS
+*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(64, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+header a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 25%;
+    
+}
+
+header a{
+    color: white;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    margin:10px;
+    text-align: center;
+    
+    
+}
+
+header a:hover{
+    color:rgb(0, 200, 255);
+}
+
+.current{
+    color:rgb(0, 200, 255);
+}
+
+.profile-card{
+    background-color: rgb(64, 61, 61);
+    margin: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    align-items: center;  
+    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+.profile-card h1{
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+.profile-card p{
+    color:rgb(0, 200, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.profile-stats {
+    display: flex;
+}
+
+.profile-stats h2{
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+.profile-stats p{
+    padding-left: 30px;
+    
+}
+
+.display-picture{
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    border-radius: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+button{
+    margin: 10px;
+}
+
+.sub-btn{
+    width: 90%;
+    background-color: rgb(0, 200, 255);
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.sub-btn:hover{
+    background-color: #ffffff;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.msg-btn{
+    width: 90%;
+    background-color: white;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: dodgerblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 2px solid dodgerblue;
+}
+
+.msg-btn:hover{
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid white;
+}
+
+footer ul{
+    display: none;    
+}
+
+footer{
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 70px;  
+}
+
+@media all and (max-width: 600px){
+    
+    header {max-height: 60px}
+
+    header a {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .home-btn{
+        width: 35px;
+        height:35px;
+    }
+
+    .profile-card p{
+        color:rgb(0, 200, 255);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 22px;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: space-evenly;
+         
+    }
+
+    footer{
+        background-color: rgb(0, 200, 255);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        
+    }
+
+    .profile-stats {
+        display: flex;
+    }
+
+    .profile-stats h2{
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+        font-size: 22px;
+        padding:10px;
+    }
+
+    .profile-stats p{
+        padding-left: 30px;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    button{
+        margin: 10px;
+    }
+}
+</style>
+<body>
+        <!--HEADER - 11/08/2021-->
+    <header>
+        <!--Header Code Here-->
+        <a href="./index.html">
+            <img class="home-btn" src="./favicon.ico" alt="">
+        </a>
+        <a href="#" class="current">
+            Home
+        </a>
+        <a href="#">        
+            MyApps
+        </a>
+        <a href="#">        
+            Code
+        </a>
+    </header>
+
+    <div class="profile-card">
+        <img class="display-picture" src="./page-assets/Account.ico" alt="">
+        <div class="profile-info">
+            <h1>Username</h1>
+            <p>@username</p>
+        </div>
+        <div class="profile-stats">
+            <h2>Contributions:</h2>
+            <p>0</p>
+        </div>
+        <div class="profile-stats">
+            <h2>Code Projects:</h2>
+            <p>0</p>
+        </div>
+        <div class="profile-stats">
+            <h2>Subscriber List:</h2>
+            <p>0</p>
+        </div>
+        <button id="#" class="sub-btn">Subscribe</button>
+        <button class="msg-btn">Message</button>
+    </div>
+    
+
+        <!--FOOTER - 11/08/2021-->
+    <footer>
+        <!--Footer Coder Here-->
+        <ul>
+            <li><a href="#"><img src="./page-assets/Home.ico" alt="" height="58px"></a></li>
+            <li><a href="#"><img src="./page-assets/Mail.ico" alt="" height="58px"></a></li>
+            <li><a href="#"><img src="./page-assets/search.ico" alt="" height="58px"></a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
